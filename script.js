@@ -8,8 +8,6 @@ function myColorChange() {
     element.style.color = "red";
 }
 
-
-
 function mojaFunkcja(imie) {
 
     const clients = ["Mango", "Poly", "Ajax"];
@@ -21,7 +19,6 @@ function mojaFunkcja(imie) {
         if (client === imie) {
             message = "Klient z takim inieniem jest w bazie danych!";
             break;
-
         }
         message = "Nie znaleźliśmy takiego klienta w bazie danych!"
     }
