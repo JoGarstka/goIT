@@ -7,3 +7,25 @@ function myColorChange() {
     const element = document.getElementById("id01");
     element.style.color = "red";
 }
+
+
+
+function mojaFunkcja(){
+
+    const clients = ["Mango", "Poly", "Ajax"];
+    const clientNameToFind = "Poly";
+    let message;
+
+    for (const client of clients) {
+
+        if (client === clientNameToFind) {
+            message = "Klient z takim inieniem jest w bazie danych!" break;
+
+        }
+        message = "Nie znaleźliśmy takiego klienta w bazie danych!"
+    }
+console.log(message)
+}
+
+
+
