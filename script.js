@@ -8,22 +8,44 @@ function myColorChange() {
     element.style.color = "red";
 }
 
-function mojaFunkcja(imie) {
+const przesylka = {
+    name: "",
+    ulica: "",
+  };
+  
+  const przesylka2 = {
+    name: "",
+    ulica: "",
+  };
+  
+  przesylka2.waga = 20;
+  przesylka.name = "list";
+  przesylka2.name = "paczka";
 
-    const clients = ["Mango", "Poly", "Ajax"];
-    const clientNameToFind = "Patryk";
-    let message;
 
-    for (const client of clients) {
+  function mojaFunkcja(id) {
 
-        if (client === imie) {
-            message = "Klient z takim inieniem jest w bazie danych!";
-            break;
-        }
-        message = "Nie znaleźliśmy takiego klienta w bazie danych!"
+    const element = document.getElementById("id01");
+    const element2 = document.getElementById("id02");
+  
+    if (id === 1) { //instrukcje dla przycisku z informacja o przesylce 1
+  
+      informacja = "Typ twojej przesylki to: " + przesylka.name;
+      element.innerHTML = informacja;
+      
+      informacja = "Przesyłka nie posiada wagi";
+      element2.innerHTML = informacja;
     }
-console.log(message)
-}
-
-
-
+  
+    else if (id === 2) { //instrukcje dla przycisku z informacja o przesylce 2
+  
+      informacja = "Typ twojej przesylki to: " + przesylka2.name;
+      element.innerHTML = informacja;
+    
+      informacja = "Waga twojej przesylki to: " + przesylka2.waga + " kg";
+      element2.innerHTML = informacja;
+    }
+  
+  }
+  
+  
